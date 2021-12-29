@@ -145,7 +145,7 @@ class StudentController extends Controller
 
   # Auth .....
 
-  /*public function Login(){
+ public function Login(){
       return view('Users.login');
   }
 
@@ -159,15 +159,15 @@ class StudentController extends Controller
           "password" => "required|min:6"
       ]);
 
-      dd(auth()->attempt($data));
+     // dd(auth()->attempt($data));
 
-   /* if(auth()->attempt($data)){
+ if(auth()->attempt($data)){
         return redirect(url('/Users'));
     }else{
         return redirect('/Login');
-    }*/
+    }
 
-  }/*
+  }
 
 
 
