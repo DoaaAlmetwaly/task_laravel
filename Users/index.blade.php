@@ -42,7 +42,7 @@
 
         </div>
 
-         {{ 'Welcome , '.auth()->user()->name }}
+         {{ 'Welcome , '.auth()->student()->name }}
          <br>
 
         <a href="{{url('/Users/Create')}}">+ Account</a> ||  <a href="{{url('/logout')}}">LogOut</a>
@@ -64,7 +64,7 @@
 
             @foreach ($data as  $value)
 
-            @dd($value);
+            <!--@dd($value);-->
 
            <tr>
                  <td>{{$value->id}}</td>
